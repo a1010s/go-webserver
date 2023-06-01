@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"log"
 	"net/http"
 	"net/url"
@@ -15,6 +16,7 @@ func main() {
 	// Set up HTTP request handlers
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/provision", provisionHandler)
+	http.HandleFunc("/about", templates.AboutHandler)
 
 	log.Printf("Server started on port %s\n", port)
 	log.Fatal(http.ListenAndServe(port, nil))
