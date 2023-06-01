@@ -1,0 +1,1 @@
+## Go webserver | Pipeline trigger on Gitlab
