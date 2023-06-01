@@ -3,11 +3,14 @@
 _The Self-Service Infrastructure Portal is a web application that allows users to choose an infrastructure template and provision it by triggering pipelines in a GitLab project. It provides a simple and user-friendly interface for selecting the desired template, entering the project name and GitLab token, and initiating the provisioning process._
 
 <p align="center">
-<br><br>
+<br>
 <img src="project-files/preview.png" alt="How it looks" width="450" height="250">
 </p>
 
 ## Features
+<span style="color:#90EE90">_*Feel free to modify this code and adjust it to your own purpouses._</span>
+<br>
+_*Note: Please enter your valid Gitlab ProjectID if you plan to use it as it is_
 
 - Choose from various infrastructure templates, including Debian Server, Ubuntu Server, K8s Cluster, Windows Server, and 2 Linux VMs Network.
 - Enter the project name and GitLab token for authentication.
