@@ -84,7 +84,7 @@ func provisionHandler(w http.ResponseWriter, r *http.Request) {
 
 func triggerPipeline(token, template, projectName string) error {
 	// Define the project ID and the endpoint URL for triggering the pipeline
-	projectID := "46...your project num"
+	projectID := "46...your Gitlab project ID"
 	endpoint := fmt.Sprintf("https://gitlab.com/api/v4/projects/%s/trigger/pipeline?ref=main&token=%s", projectID, token)
 
 	// Prepare the data payload for the HTTP request
