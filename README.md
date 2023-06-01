@@ -26,11 +26,11 @@ Before running the Self-Service Infrastructure Portal, ensure that you have the 
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/your-app.git
+   git clone https://github.com/a1010s/go-webserver.git
 
 2. Navigate to the project directory:
    ```bash
-   cd your-app
+   cd go-webserver
 3. Build and run the application:
    ```bash
    go run .
