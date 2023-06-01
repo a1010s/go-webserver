@@ -37,22 +37,26 @@ func AboutHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Write the HTML content to the response, including CSS style
 	htmlTemplate := `
-		<!DOCTYPE html>
-		<html>
-		<head>
-			<title>About</title>
-			<style>
-				body {
-					background-color: #202630;
-					color: white;
-					font-family: "Helvetica", sans-serif;
-				}
-			</style>
-		</head>
-		<body>
-			%s
-		</body>
-		</html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>About</title>
+		<style>
+			body {
+				background-color: #202630;
+				color: white;
+				font-family: "Helvetica", sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		%s
+		<p align="center">
+			<br>
+			
+		</p>
+	</body>
+	</html>
 	`
 	fmt.Fprintf(w, htmlTemplate, htmlContent.String())
 }

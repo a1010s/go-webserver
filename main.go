@@ -17,6 +17,8 @@ func main() {
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/provision", provisionHandler)
 	http.HandleFunc("/about", templates.AboutHandler)
+	http.HandleFunc("/template", templates.TemplateHandler)
+	http.Handle("/project-files/", http.StripPrefix("/project-files/", http.FileServer(http.Dir("project-files"))))
 
 	log.Printf("Server started on port %s\n", port)
 	log.Fatal(http.ListenAndServe(port, nil))

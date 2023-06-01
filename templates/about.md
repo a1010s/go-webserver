@@ -4,10 +4,11 @@ _The Self-Service Infrastructure Portal is a web application that allows users t
 _by triggering pipelines in a GitLab project. It provides a simple and user-friendly interface for selecting the desired template, entering the project name_ 
 _and GitLab token, and initiating the provisioning process._
 
-<p align="center">
+<p align="left">
 <br>
-<img src="preview.png" width="450" height="250">
+<img src="../project-files/preview.png" alt="preview" width="450" height="200">
 </p>
+
 
 ## Features
 <span style="color:#90EE90">_*Feel free to modify this code and adjust it to your own purpouses._</span>
